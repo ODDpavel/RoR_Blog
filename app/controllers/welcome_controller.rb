@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
 
   end
 
-  def first
+  def show
 
   end
 end
