@@ -18,9 +18,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to @post
+      redirect_to @post, success: 'Post was success created' # направляет с сообщением зелёного цвета (бутстраповские алерты)
     else
-      render :new
+      render :new , danger: 'Post wasn\'t created' # направляет с сообщением красного цвета (бутстраповские алерты)
     end
   end
 
@@ -31,14 +31,16 @@ class PostsController < ApplicationController
   def update
 
     if @post.update_attributes(post_params)
-      redirect_to @post
+      redirect_to @post, success: 'Post was success updated' # направляет с сообщением зелёного цвета (бутстраповские алерты)
+    else
+      render :edit, danger: 'Post was not updated' # направляет с сообщением красного цвета (бутстраповские алерты)
     end
   end
 
   def destroy
 
     @post.destroy
-    redirect_to posts_path
+    redirect_to posts_path, success: 'Post was success deleted' # направляет с сообщением зелёного цвета (бутстраповские алерты)
   end
   private
 

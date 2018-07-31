@@ -30,4 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  header:
+    brand: 'Blog on RoR'
+    all_item: 'All articles'
+    new_item: 'New article'
+  common:
+    errors: 'Occured errors :'
+    back: 'Back'
+  posts:
+    index:
+      title: 'Articles'
+    new:
+      title: 'New article'
+    edit:
+      title: 'Edit article'
+    form:
+      submit: 'Submit'
+
