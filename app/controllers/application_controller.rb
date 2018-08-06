@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  protect_from_forgery prepend: true
   add_flash_types :success,:danger, :info, :warning # используются для цветового отображения уведомлений при сохранении, удалении, изменении
 
   before_action :set_locale #перед любым экшеном выставить локаль
