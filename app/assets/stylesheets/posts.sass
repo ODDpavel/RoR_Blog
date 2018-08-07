@@ -1,6 +1,5 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'main.sass'
 
 article.post
   margin-bottom: 1em
@@ -19,12 +18,17 @@ article.post
   .thumb
     float: left
     margin-right: 1em
-.editor-body
-  min-height: 250px
-.editor-summary
-  min-height: 100px
-//.attachment
-//  padding-top: 2em
-//  padding-bottom: 2em
-//  .attachment__caption
-//    visibility: hidden
+  .editor-body
+    min-height: 250px
+  .editor-summary
+    min-height: 100px
+  .attachment
+    padding-top: 2em
+  .attachment__caption
+      visibility: hidden
+  section.footer-summary
+    .tag
+      padding: 0 0.25em 0.15em 0.25em
+      border-radius: 0.4em
+      background-color: $primary-color
+      color: #EFEFEF

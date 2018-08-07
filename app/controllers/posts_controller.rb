@@ -46,7 +46,7 @@ class PostsController < ApplicationController
 
 # приватный метод, в котором обязательный параметр :posts в котором разрешаем следующие поля :title, :summary, :body
   def post_params
-    params.require(:post).permit(:title, :summary, :body, :image)
+    params.require(:post).permit(:title, :summary, :body, :image, :all_tags)
   end
 
   def set_post

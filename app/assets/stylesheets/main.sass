@@ -1,12 +1,15 @@
+$primary-color: deepskyblue
+$article: lightskyblue
+
 body
-  background-color: #EFEFEF
+  background-color: whitesmoke
   .main
     padding-top: 1em
     a
-      color: deepskyblue
+      color: $primary-color
       text-decoration: none
       &:hover
-        color: lightskyblue
+        color: $article
     h1, h2
       color: darkturquoise
   .field_with_errors
@@ -14,3 +17,4 @@ body
       color: #d01612
     input, textarea
       border-color: #d01612
+
