@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
+  has_many :comments
 
   has_many :taggings # указывает на соединение один-ко-многим с другой моделью
   has_many :tags, through: :taggings # используется для настройки соединения многие-ко-многим с другой моделью
