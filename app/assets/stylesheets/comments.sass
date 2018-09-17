@@ -1,3 +1,48 @@
-// Place all the styles related to the Comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'main.sass'
+
+.comment
+  background-color: #343434
+  margin-top: 10px
+  padding: 10px
+  border: solid
+    width: 1px
+    color: $comment-border
+    radius: 5px
+  h2
+    margin-left: 15px
+  #comment-header
+    margin: 0 5px 5px 5px
+    padding-bottom: 5px
+    border-bottom: solid
+      width: 1px
+      color: $accent
+
+
+  .comment-view
+    background-color: $comment-background
+    margin: 10px 5px 5px 5px
+    padding: 10px
+    border: solid
+      width: 1px
+      color: $comment-border
+      radius: 5px
+    .form-group
+      color: #F7F7F7
+  .comment-add
+    background-color: $comment-background
+    margin: 15px 5px 5px 5px
+    padding: 10px
+    border: solid
+      width: 1px
+      color: $comment-border
+      radius: 5px
+    .form-group
+      color: #F7F7F7
+  .deleteAction
+    cursor: pointer
+    color: $accent
+    &:hover
+      color: $accent-dark
+
+
+

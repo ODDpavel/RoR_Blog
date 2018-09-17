@@ -12,8 +12,10 @@
     </small>
   </section>
   <section class="post-body">
+    <div class="post-img">
       <%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %>
       <%= @post.body.html_safe %>
+    </div>
   </section>
   <%= render 'comment' %>
 </article>

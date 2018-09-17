@@ -1,4 +1,17 @@
+@import 'main.sass'
+$edit-color: #F7F7F7
 .post-edit
-  max-width: 50%
+  background-color: $primary-shade
+  margin: 1em 0 2em
+  padding: 10px 30% 10px 15px
+  border: solid
+    color: $edit-color
+    width: 1px
+    radius: 3px
   .body-editor
-    background-color: white
+    background-color: $edit-color
+  #post_image
+    color: $edit-color
+
+  .trix-button
+    background-color: $edit-color

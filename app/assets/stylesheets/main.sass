@@ -1,20 +1,31 @@
-$primary-color: deepskyblue
-$article: lightskyblue
+$primary: #434343
+$primary-dark: #343A40
+$primary-shade: #343434
+$accent: #17A2B8
+$accent-dark: #138496
+$comment-background: #343A40
+$comment-border: #999
 
 body
-  background-color: whitesmoke
+  background-color: $primary-dark
+  color: #EFEFEF
+  .header-top
+    background-color: $primary-shade
   .main
-    padding-top: 1em
+    padding: 10px 30px
     a
-      color: $primary-color
+      color: $accent
       text-decoration: none
       &:hover
-        color: $article
+        color: $accent-dark
     h1, h2
-      color: darkturquoise
+      color: $accent
   .field_with_errors
     label
       color: #d01612
     input, textarea
       border-color: #d01612
-
+  .bg-dark
+    background-color: $primary-shade !important
+  .products_list
+    background-color: #B00100
