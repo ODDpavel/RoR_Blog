@@ -20,6 +20,6 @@
 //= require posts
 //= require comments
 //= require trix
-
+//= require bootstrap-datepicker
 
 

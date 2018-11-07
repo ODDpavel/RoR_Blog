@@ -1,7 +1,7 @@
 <div class="comment" data-post_id="<%= @post.id %>">
   <div id="comment-header">
     <h2>Comments</h2>
-    <p> <%= puts @post.taggings %></p>
+
   </div>
 
   <% @post.comments.each do |comment| %>
@@ -14,11 +14,11 @@
         <div class="form-group" >
           Comment № <%= comment.id %>:
           <%= comment.body %>
-          <span class="deleteAction">Delete</span>
+          <div class="deleteAction">Delete</div>
          </div>
 
         <div class="comment-edit">
-          <%= link_to 'Add String', '/edit-comment', class: 'edit_comment', remote: true %>
+          <%= link_to 'Edit', '/edit-comment', class: 'edit_comment', remote: true %>
           <!-- то же самое что и  <a class="edit_comment" href="#" data-remote="true">Add String</a> -->
         </div>
       </div>
